@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="GitHub Pages에 바로 배포할 수 있는 개인 포트폴리오 웹페이지"
+    />
+    <title>Haena Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="홈으로 이동">
+        <span class="brand-mark">H</span>
+        <span>Haena</span>
+      </a>
+      <nav class="nav" aria-label="주요 메뉴">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">GitHub Pages Portfolio</p>
+          <h1 id="hero-title">아이디어를 실제로 보이는 웹으로 만듭니다.</h1>
+          <p class="hero-text">
+            작은 프로젝트부터 실험적인 프로토타입까지, 배운 것과 만든 것을
+            한눈에 보여주는 포트폴리오 페이지입니다.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">프로젝트 보기</a>
+            <a class="button ghost" href="https://github.com/" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="포트폴리오 미리보기">
+          <div class="browser-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="preview-panel">
+            <div class="metric">
+              <strong>12</strong>
+              <span>Projects</span>
+            </div>
+            <div class="chart" aria-hidden="true">
+              <span style="height: 44%"></span>
+              <span style="height: 66%"></span>
+              <span style="height: 52%"></span>
+              <span style="height: 78%"></span>
+              <span style="height: 61%"></span>
+            </div>
+            <div class="preview-card">
+              <span class="thumbnail sunrise"></span>
+              <div>
+                <strong>Web Design</strong>
+                <p>Responsive UI</p>
+              </div>
+            </div>
+            <div class="preview-card">
+              <span class="thumbnail forest"></span>
+              <div>
+                <strong>Frontend</strong>
+                <p>HTML, CSS, JS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Work</p>
+          <h2 id="projects-title">대표 프로젝트</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-image image-one" aria-hidden="true"></div>
+            <div class="project-body">
+              <h3>Study Dashboard</h3>
+              <p>공부 기록과 목표 달성률을 시각적으로 확인하는 웹 대시보드.</p>
+              <a href="https://github.com/" target="_blank" rel="noreferrer">저장소 보기</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-image image-two" aria-hidden="true"></div>
+            <div class="project-body">
+              <h3>Mini Brand Site</h3>
+              <p>브랜드 소개와 문의 동선을 담은 반응형 랜딩 페이지.</p>
+              <a href="https://github.com/" target="_blank" rel="noreferrer">저장소 보기</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-image image-three" aria-hidden="true"></div>
+            <div class="project-body">
+              <h3>Creative Notes</h3>
+              <p>아이디어를 카드 형태로 정리하고 빠르게 찾아보는 노트 앱.</p>
+              <a href="https://github.com/" target="_blank" rel="noreferrer">저장소 보기</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split-section" id="about" aria-labelledby="about-title">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2 id="about-title">꾸준히 배우고, 명확하게 표현합니다.</h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            사용자에게 필요한 정보를 선명하게 전달하는 화면을 좋아합니다. HTML,
+            CSS, JavaScript를 중심으로 작은 기능을 만들고 다듬으며 웹 개발 감각을
+            키우고 있습니다.
+          </p>
+          <ul class="skill-list" aria-label="기술 스택">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>GitHub Pages</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="contact-band" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">새로운 프로젝트를 함께 시작해요.</h2>
+        </div>
+        <a class="button primary" href="mailto:hello@example.com">메일 보내기</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> Haena Portfolio</span>
+      <a href="#top">맨 위로</a>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
