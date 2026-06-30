@@ -1,16 +1,18 @@
 :root {
-  color-scheme: light;
-  --ink: #17212b;
-  --muted: #5f6f7d;
-  --line: #d9e2e8;
-  --paper: #f7faf9;
-  --white: #ffffff;
-  --green: #0f7b6c;
-  --green-dark: #075f55;
-  --coral: #e87461;
-  --yellow: #f4c95d;
-  --blue: #4b86b4;
-  --shadow: 0 22px 55px rgba(23, 33, 43, 0.13);
+  color-scheme: dark;
+  --ink: #f5f7fb;
+  --muted: #a7b4c3;
+  --line: rgba(162, 179, 196, 0.2);
+  --paper: #080d14;
+  --surface: #111924;
+  --surface-strong: #172231;
+  --white: #f8fbff;
+  --green: #5ee0c1;
+  --green-dark: #21b89d;
+  --coral: #ff8a70;
+  --yellow: #ffd166;
+  --blue: #74a9ff;
+  --shadow: 0 28px 70px rgba(0, 0, 0, 0.38);
 }
 
 * {
@@ -23,7 +25,10 @@ html {
 
 body {
   margin: 0;
-  background: var(--paper);
+  background:
+    radial-gradient(circle at 18% 12%, rgba(94, 224, 193, 0.13), transparent 32%),
+    radial-gradient(circle at 78% 4%, rgba(255, 138, 112, 0.12), transparent 28%),
+    var(--paper);
   color: var(--ink);
   font-family: "Noto Sans KR", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
@@ -42,13 +47,13 @@ a {
   justify-content: space-between;
   gap: 24px;
   padding: 18px clamp(20px, 5vw, 72px);
-  background: rgba(247, 250, 249, 0.88);
-  border-bottom: 1px solid rgba(217, 226, 232, 0.75);
+  background: rgba(8, 13, 20, 0.86);
+  border-bottom: 1px solid var(--line);
   backdrop-filter: blur(18px);
 }
 
 .site-header.is-scrolled {
-  box-shadow: 0 12px 32px rgba(23, 33, 43, 0.08);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.3);
 }
 
 .brand,
@@ -69,8 +74,8 @@ a {
   width: 34px;
   height: 34px;
   place-items: center;
-  color: var(--white);
-  background: var(--green);
+  color: #05110f;
+  background: linear-gradient(135deg, var(--green), var(--yellow));
   border-radius: 8px;
 }
 
@@ -161,7 +166,7 @@ h3 {
 }
 
 .button.primary {
-  color: var(--white);
+  color: #05110f;
   background: var(--green);
 }
 
@@ -171,13 +176,13 @@ h3 {
 
 .button.ghost {
   color: var(--ink);
-  background: var(--white);
+  background: rgba(248, 251, 255, 0.06);
   border-color: var(--line);
 }
 
 .hero-visual {
   overflow: hidden;
-  background: var(--white);
+  background: rgba(17, 25, 36, 0.94);
   border: 1px solid var(--line);
   border-radius: 8px;
   box-shadow: var(--shadow);
@@ -187,7 +192,7 @@ h3 {
   display: flex;
   gap: 7px;
   padding: 14px 16px;
-  background: #edf3f5;
+  background: #0d141d;
   border-bottom: 1px solid var(--line);
 }
 
@@ -215,7 +220,7 @@ h3 {
 
 .metric,
 .preview-card {
-  background: #f5f8fa;
+  background: rgba(248, 251, 255, 0.055);
   border: 1px solid var(--line);
   border-radius: 8px;
 }
@@ -245,7 +250,7 @@ h3 {
   gap: 10px;
   min-height: 170px;
   padding: 18px;
-  background: #17313b;
+  background: #071016;
   border-radius: 8px;
 }
 
@@ -311,9 +316,10 @@ h3 {
 
 .project-card {
   overflow: hidden;
-  background: var(--white);
+  background: rgba(17, 25, 36, 0.9);
   border: 1px solid var(--line);
   border-radius: 8px;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.18);
 }
 
 .project-image {
@@ -324,19 +330,20 @@ h3 {
 
 .image-one {
   background:
-    linear-gradient(135deg, rgba(15, 123, 108, 0.25), rgba(75, 134, 180, 0.35)),
-    repeating-linear-gradient(0deg, #eff7f4 0 22px, #dcece8 22px 24px);
+    linear-gradient(135deg, rgba(94, 224, 193, 0.28), rgba(116, 169, 255, 0.24)),
+    repeating-linear-gradient(0deg, #101b24 0 22px, #1d3036 22px 24px);
 }
 
 .image-two {
   background:
-    linear-gradient(145deg, rgba(232, 116, 97, 0.72), rgba(244, 201, 93, 0.55)),
-    radial-gradient(circle at 28% 36%, rgba(255, 255, 255, 0.78) 0 14%, transparent 15%);
+    linear-gradient(145deg, rgba(255, 138, 112, 0.7), rgba(255, 209, 102, 0.42)),
+    radial-gradient(circle at 28% 36%, rgba(255, 255, 255, 0.36) 0 14%, transparent 15%),
+    #111924;
 }
 
 .image-three {
   background:
-    linear-gradient(160deg, rgba(23, 49, 59, 0.9), rgba(15, 123, 108, 0.66)),
+    linear-gradient(160deg, rgba(5, 12, 18, 0.92), rgba(94, 224, 193, 0.38)),
     repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.2) 0 6px, transparent 6px 16px);
 }
 
@@ -350,7 +357,7 @@ h3 {
 }
 
 .project-body a {
-  color: var(--green-dark);
+  color: var(--green);
   font-weight: 800;
 }
 
@@ -358,7 +365,7 @@ h3 {
   display: grid;
   grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
   gap: clamp(28px, 6vw, 88px);
-  background: var(--white);
+  background: rgba(17, 25, 36, 0.74);
   border-block: 1px solid var(--line);
 }
 
@@ -378,8 +385,8 @@ h3 {
 
 .skill-list li {
   padding: 9px 12px;
-  background: #eef5f3;
-  border: 1px solid #d4e6e1;
+  background: rgba(94, 224, 193, 0.08);
+  border: 1px solid rgba(94, 224, 193, 0.22);
   border-radius: 8px;
   font-weight: 800;
 }
