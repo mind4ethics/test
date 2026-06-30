@@ -1,4 +1,4 @@
-# Haena Portfolio
+# HeoGkong Portfolio
 
 GitHub Pages에 바로 올릴 수 있는 정적 포트폴리오 웹페이지입니다.
 
